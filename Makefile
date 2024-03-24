@@ -3,3 +3,14 @@ install: #устанавливает зависимости в директор�
 
 brain-games: #запускает brain_games.py
 	poetry run brain-games
+
+build: #сборка пакета 
+	poetry build
+
+publish: #публикация пакета
+	poetry publish --dry-run
+
+package-install: #установка пакета
+	python3 -m pip install --user dist/*.whl
+
+
