@@ -1,5 +1,6 @@
 import prompt
 from random import randint
+from .logic import algorithm, congratulations
 
 
 def main():
@@ -19,15 +20,12 @@ def even():
     print('Answer "yes" if the number is even, otherwise answer "no".')
     for i in range(3):
         number = randint(0, 1000000)
-        print(f'Question: {number}')
-        correct_answer = 'no' if number%2 else 'yes'
-        users_answer = input('Your answer: ')
-        if correct_answer == users_answer:
-            print('Correct!')
-        else:
-            print(f"'{users_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.\nLet's try again, {name}!")
+        correct_answer = 'no' if number % 2 else 'yes'
+        if algorithm(correct_answer,
+                     name,
+                     question=f'Question: {number}'):
             return
-    print(f'Congratulations, {name}!')
+    congratulations(name, i)
 
 
 if __name__ == '__main__':
