@@ -1,18 +1,11 @@
-import prompt
 from random import randint
-from .logic import algorithm, congratulations
+from .logic import algorithm, congratulations, welcome_user
 
 
 def main():
-    print('Welcome to the Brain Games!')
-    welcome_user()
-    even()
-
-
-def welcome_user():
     global name
-    name = prompt.string("May I have your name? ")
-    print(f"Hello, {name}!")
+    name = welcome_user()
+    even()
 
 
 def even():
