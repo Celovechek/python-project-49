@@ -15,3 +15,6 @@
 
 ### Asciinema (brain-progression game)
 [![asciicast](https://asciinema.org/a/5UDeFPVdLLbF3pD2qOrlR1g9I.svg)](https://asciinema.org/a/5UDeFPVdLLbF3pD2qOrlR1g9I)
+
+### Asciinema (brain-prime game)
+[![asciicast](https://asciinema.org/a/8CBBlEONqmpVmMJk7qNbsZGGh.svg)](https://asciinema.org/a/8CBBlEONqmpVmMJk7qNbsZGGh)
