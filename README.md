@@ -1,9 +1,61 @@
+#**Описание проекта**
+Данный репозиторий является реализацией первого проекта "Игры разума" на платформа Hexlet. 
 ### Hexlet tests and linter status:
-[![Actions Status](https://github.com/Celovechek/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Celovechek/python-project-49/actions)
+[![Actions Status](https://github.com/Celovechek/python-project-49/actions/workflows/hexlet-check.y>
 
 ### CodeClimate Maintainability Badge
-[![Maintainability](https://api.codeclimate.com/v1/badges/88ce675dc28e290e0fce/maintainability)](https://codeclimate.com/github/Celovechek/python-project-49/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/88ce675dc28e290e0fce/maintainability)](ht>
 
+##Минимальные требования
+1. ОС Linux
+2. Python версии 3.6 или выше.
+3. pip версии 19 и выше. 
+
+Для проверки версии необходимо выполнить команду:
+```
+python3 -m pip --version
+```
+
+При необходимости версию можно обновить командой:
+```
+python3 -m pip install --upgrade --user pip
+```
+
+##Инструкции по установке и запуску
+Для установки пакета необходимо выполнить одну из следующих команд:
+```
+make package-install
+```
+```
+python3 -m pip install --user dist/*.whl
+```
+
+В случае, если небходимо переустановить пакет, необходимо выполнить одну из команд:
+```
+package-reinstall
+```
+```
+python3 -m pip install --user --force-reinstall dist/*.whl
+```
+
+Для запуска игр достаточно запустить одну из команд:
+```
+brain-even
+```
+```
+brain-calc
+```
+```
+brain-gcd
+```
+```
+brain-progression
+```
+```
+brain-prime
+```
+
+##Asciinemas
 ### Asciinema (installation + brain-even game)
 [![asciicast](https://asciinema.org/a/v7E0wgZSqzfZxUysnNPtaYodH.svg)](https://asciinema.org/a/v7E0wgZSqzfZxUysnNPtaYodH)
 
