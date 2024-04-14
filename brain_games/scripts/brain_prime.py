@@ -20,7 +20,7 @@ def prime(NUMBER):
 
 def prime_game():
     global NAME
-    print('Answer "yes" if given NUMBER is prime. Otherwise answer "no".')
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
     for i in range(3):
         NUMBER = randint(0, 100)
         CORRECT_ANSWER = prime(NUMBER)

@@ -11,7 +11,7 @@ def main():
 
 def even():
     global NAME
-    print('Answer "yes" if the NUMBER is even, otherwise answer "no".')
+    print('Answer "yes" if the number is even, otherwise answer "no".')
     for i in range(3):
         NUMBER = randint(0, 1000000)
         CORRECT_ANSWER = 'no' if NUMBER % 2 else 'yes'
