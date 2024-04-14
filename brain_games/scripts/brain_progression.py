@@ -4,31 +4,31 @@ from .logic import algorithm, congratulations, welcome_user
 
 
 def main():
-    global name
-    name = welcome_user()
+    global NAME
+    NAME = welcome_user()
     progression()
 
 
 def progression():
-    global name
+    global NAME
     print('What number is missing in the progression?')
     for i in range(3):
-        start = randint(0, 100)
-        step = randint(1, 100)
-        length = randint(5, 15)
-        progression_list = []
-        for _ in range(length):
-            progression_list.append(str(start))
-            start += step
-        correct_answer_position = randint(0, length - 1)
-        correct_answer = progression_list[correct_answer_position]
-        progression_list[correct_answer_position] = '..'
-        if algorithm(correct_answer,
-                     name,
-                     question=f'Question: {" ".join(progression_list)}'):
+        START = randint(0, 100)
+        STEP = randint(1, 100)
+        LENGTH = randint(5, 15)
+        PROGRESSION_LIST = []
+        for _ in range(LENGTH):
+            PROGRESSION_LIST.append(str(START))
+            START += STEP
+        CORRECT_ANSWER_POSITION = randint(0, LENGTH - 1)
+        CORRECT_ANSWER = PROGRESSION_LIST[CORRECT_ANSWER_POSITION]
+        PROGRESSION_LIST[CORRECT_ANSWER_POSITION] = '..'
+        if algorithm(CORRECT_ANSWER,
+                     NAME,
+                     QUESTION=f'QUESTION: {" ".join(PROGRESSION_LIST)}'):
             return
-    congratulations(name, i)
+    congratulations(NAME, i)
 
 
-if __name__ == '__main__':
+if __NAME__ == '__main__':
     main()

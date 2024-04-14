@@ -4,25 +4,25 @@ from .logic import algorithm, congratulations, welcome_user
 
 
 def main():
-    global name
-    name = welcome_user()
+    global NAME
+    NAME = welcome_user()
     calc()
 
 
 def calc():
-    global name
+    global NAME
     print('What is the result of the expression?')
     for i in range(3):
-        first_number = randint(0, 1000)
-        second_number = randint(0, 1000)
-        operation = choice([' + ', ' - ', ' * '])
-        correct_answer = str(eval(str(first_number) + operation + str(second_number)))
-        if algorithm(correct_answer,
-                     name,
-                     question=f'Question: {first_number}{operation}{second_number}'):
+        FIRST_NUMBER = randint(0, 1000)
+        SECOND_NUMBER = randint(0, 1000)
+        OPERATION = choice([' + ', ' - ', ' * '])
+        CORRECT_ANSWER = str(eval(str(FIRST_NUMBER) + OPERATION + str(SECOND_NUMBER)))
+        if algorithm(CORRECT_ANSWER,
+                     NAME,
+                     QUESTION=f'QUESTION: {FIRST_NUMBER}{OPERATION}{SECOND_NUMBER}'):
             return
-    congratulations(name, i)
+    congratulations(NAME, i)
 
 
-if __name__ == '__main__':
+if __NAME__ == '__main__':
     main()

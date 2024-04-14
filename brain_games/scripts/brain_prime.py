@@ -4,32 +4,32 @@ from .logic import algorithm, congratulations, welcome_user
 
 
 def main():
-    global name
-    name = welcome_user()
+    global NAME
+    NAME = welcome_user()
     prime_game()
 
 
-def prime(number):
-    if number == 0 or number == 1:
+def prime(NUMBER):
+    if NUMBER == 0 or NUMBER == 1:
         return "no"
-    divider = 2
-    while number % divider != 0:
-        divider += 1
-    return "yes" if number == divider else "no"
+    DIVIDER = 2
+    while NUMBER % DIVIDER != 0:
+        DIVIDER += 1
+    return "yes" if NUMBER == DIVIDER else "no"
 
 
 def prime_game():
-    global name
-    print('Answer "yes" if given number is prime. Otherwise answer "no".')
+    global NAME
+    print('Answer "yes" if given NUMBER is prime. Otherwise answer "no".')
     for i in range(3):
-        number = randint(0, 100)
-        correct_answer = prime(number)
-        if algorithm(correct_answer,
-                     name,
-                     question=f'Question: {number}'):
+        NUMBER = randint(0, 100)
+        CORRECT_ANSWER = prime(NUMBER)
+        if algorithm(CORRECT_ANSWER,
+                     NAME,
+                     QUESTION=f'QUESTION: {NUMBER}'):
             return
-    congratulations(name, i)
+    congratulations(NAME, i)
 
 
-if __name__ == '__main__':
+if __NAME__ == '__main__':
     main()

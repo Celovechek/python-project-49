@@ -4,33 +4,33 @@ from .logic import algorithm, congratulations, welcome_user
 
 
 def main():
-    global name
-    name = welcome_user()
+    global NAME
+    NAME = welcome_user()
     gcd_game()
 
 
-def gcd(first_number, second_number):
-    while first_number != second_number:
-        if first_number > second_number:
-            first_number -= second_number
+def gcd(FIRST_NUMBER, SECOND_NUMBER):
+    while FIRST_NUMBER != SECOND_NUMBER:
+        if FIRST_NUMBER > SECOND_NUMBER:
+            FIRST_NUMBER -= SECOND_NUMBER
         else:
-            second_number -= first_number
-    return second_number
+            SECOND_NUMBER -= FIRST_NUMBER
+    return SECOND_NUMBER
 
 
 def gcd_game():
-    global name
+    global NAME
     print('Find the greatest common divisor of given numbers.')
     for i in range(3):
-        first_number = randint(0, 100)
-        second_number = randint(0, 100)
-        correct_answer = str(gcd(first_number, second_number))
-        if algorithm(correct_answer,
-                     name,
-                     question=f'Question: {first_number} {second_number}'):
+        FIRST_NUMBER = randint(0, 100)
+        SECOND_NUMBER = randint(0, 100)
+        CORRECT_ANSWER = str(gcd(FIRST_NUMBER, SECOND_NUMBER))
+        if algorithm(CORRECT_ANSWER,
+                     NAME,
+                     QUESTION=f'QUESTION: {FIRST_NUMBER} {SECOND_NUMBER}'):
             return
-    congratulations(name, i)
+    congratulations(NAME, i)
 
 
-if __name__ == '__main__':
+if __NAME__ == '__main__':
     main()

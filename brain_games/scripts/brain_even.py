@@ -4,23 +4,23 @@ from .logic import algorithm, congratulations, welcome_user
 
 
 def main():
-    global name
-    name = welcome_user()
+    global NAME
+    NAME = welcome_user()
     even()
 
 
 def even():
-    global name
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+    global NAME
+    print('Answer "yes" if the NUMBER is even, otherwise answer "no".')
     for i in range(3):
-        number = randint(0, 1000000)
-        correct_answer = 'no' if number % 2 else 'yes'
-        if algorithm(correct_answer,
-                     name,
-                     question=f'Question: {number}'):
+        NUMBER = randint(0, 1000000)
+        CORRECT_ANSWER = 'no' if NUMBER % 2 else 'yes'
+        if algorithm(CORRECT_ANSWER,
+                     NAME,
+                     QUESTION=f'QUESTION: {NUMBER}'):
             return
-    congratulations(name, i)
+    congratulations(NAME, i)
 
 
-if __name__ == '__main__':
+if __NAME__ == '__main__':
     main()

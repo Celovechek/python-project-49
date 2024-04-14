@@ -6,30 +6,30 @@ def main():
 
 
 def welcome_user():
-    global name
+    global NAME
     print('Welcome to the Brain Games!')
-    name = prompt.string("May I have your name? ")
-    print(f"Hello, {name}!")
-    return name
+    NAME = prompt.string("May I have your NAME? ")
+    print(f"Hello, {NAME}!")
+    return NAME
 
 
-def algorithm(correct_answer, name, question):
-    print(question)
-    users_answer = input('Your answer: ')
-    if correct_answer == users_answer:
+def algorithm(CORRECT_ANSWER, NAME, QUESTION):
+    print(QUESTION)
+    USERS_ANSWER = input('Your answer: ')
+    if CORRECT_ANSWER == USERS_ANSWER:
         print('Correct!')
         return False
     else:
-        print(f"'{users_answer}' is wrong answer ;(."
-              f"Correct answer was '{correct_answer}'.\n"
-              f"Let's try again, {name}!")
+        print(f"'{USERS_ANSWER}' is wrong answer ;(."
+              f"Correct answer was '{CORRECT_ANSWER}'.\n"
+              f"Let's try again, {NAME}!")
         return True
 
 
-def congratulations(name, i):
+def congratulations(NAME, i):
     if i == 2:
-        print(f'Congratulations, {name}!')
+        print(f'Congratulations, {NAME}!')
 
 
-if __name__ == '__main__':
+if __NAME__ == '__main__':
     main()
