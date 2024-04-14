@@ -17,7 +17,7 @@ def even():
         CORRECT_ANSWER = 'no' if NUMBER % 2 else 'yes'
         if algorithm(CORRECT_ANSWER,
                      NAME,
-                     QUESTION=f'QUESTION: {NUMBER}'):
+                     QUESTION=f'Question: {NUMBER}'):
             return
     congratulations(NAME, i)
 

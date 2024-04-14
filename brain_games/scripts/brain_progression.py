@@ -25,7 +25,7 @@ def progression():
         PROGRESSION_LIST[CORRECT_ANSWER_POSITION] = '..'
         if algorithm(CORRECT_ANSWER,
                      NAME,
-                     QUESTION=f'QUESTION: {" ".join(PROGRESSION_LIST)}'):
+                     QUESTION=f'Question: {" ".join(PROGRESSION_LIST)}'):
             return
     congratulations(NAME, i)
 

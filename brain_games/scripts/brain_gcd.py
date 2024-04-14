@@ -27,7 +27,7 @@ def gcd_game():
         CORRECT_ANSWER = str(gcd(FIRST_NUMBER, SECOND_NUMBER))
         if algorithm(CORRECT_ANSWER,
                      NAME,
-                     QUESTION=f'QUESTION: {FIRST_NUMBER} {SECOND_NUMBER}'):
+                     QUESTION=f'Question: {FIRST_NUMBER} {SECOND_NUMBER}'):
             return
     congratulations(NAME, i)
 

@@ -1,12 +1,12 @@
-#**Описание проекта**
+# **Описание проекта**
 Данный репозиторий является реализацией первого проекта "Игры разума" на платформа Hexlet. 
 ### Hexlet tests and linter status:
-[![Actions Status](https://github.com/Celovechek/python-project-49/actions/workflows/hexlet-check.y>
+[![Actions Status](https://github.com/Celovechek/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Celovechek/python-project-49/actions)
 
 ### CodeClimate Maintainability Badge
-[![Maintainability](https://api.codeclimate.com/v1/badges/88ce675dc28e290e0fce/maintainability)](ht>
+[![Maintainability](https://api.codeclimate.com/v1/badges/88ce675dc28e290e0fce/maintainability)](https://codeclimate.com/github/Celovechek/python-project-49/maintainability)
 
-##Минимальные требования
+## Минимальные требования
 1. ОС Linux
 2. Python версии 3.6 или выше.
 3. pip версии 19 и выше. 
@@ -21,7 +21,7 @@ python3 -m pip --version
 python3 -m pip install --upgrade --user pip
 ```
 
-##Инструкции по установке и запуску
+## Инструкции по установке и запуску
 Для установки пакета необходимо выполнить одну из следующих команд:
 ```
 make package-install
@@ -55,7 +55,7 @@ brain-progression
 brain-prime
 ```
 
-##Asciinemas
+## Asciinemas
 ### Asciinema (installation + brain-even game)
 [![asciicast](https://asciinema.org/a/v7E0wgZSqzfZxUysnNPtaYodH.svg)](https://asciinema.org/a/v7E0wgZSqzfZxUysnNPtaYodH)
 
