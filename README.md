@@ -5,16 +5,16 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/88ce675dc28e290e0fce/maintainability)](https://codeclimate.com/github/Celovechek/python-project-49/maintainability)
 
 ### Asciinema (installation + brain-even game)
-[![asciicast](https://asciinema.org/a/2RnJzck1na3CdnME65l9zUG0V.svg)](https://asciinema.org/a/2RnJzck1na3CdnME65l9zUG0V)
+[![asciicast](https://asciinema.org/a/v7E0wgZSqzfZxUysnNPtaYodH.svg)](https://asciinema.org/a/v7E0wgZSqzfZxUysnNPtaYodH)
 
 ### Asciinema (brain-calc game)
-[![asciicast](https://asciinema.org/a/S44WzflWVI9qatIuG0v4ll7xV.svg)](https://asciinema.org/a/S44WzflWVI9qatIuG0v4ll7xV)
+[![asciicast](https://asciinema.org/a/m4xvWYTFcd9JQ28qVbvvZz304.svg)](https://asciinema.org/a/m4xvWYTFcd9JQ28qVbvvZz304)
 
 ### Asciinema (brain-gcd game)
-[![asciicast](https://asciinema.org/a/2GPSCKwtgWfeUvb5q1TMcihgS.svg)](https://asciinema.org/a/2GPSCKwtgWfeUvb5q1TMcihgS)
+[![asciicast](https://asciinema.org/a/jSosIntJDapDrIdTMxvnRuIk6.svg)](https://asciinema.org/a/jSosIntJDapDrIdTMxvnRuIk6)
 
 ### Asciinema (brain-progression game)
-[![asciicast](https://asciinema.org/a/5UDeFPVdLLbF3pD2qOrlR1g9I.svg)](https://asciinema.org/a/5UDeFPVdLLbF3pD2qOrlR1g9I)
+[![asciicast](https://asciinema.org/a/K63r6kQETUq6yIssEOJTkFFzV.svg)](https://asciinema.org/a/K63r6kQETUq6yIssEOJTkFFzV)
 
 ### Asciinema (brain-prime game)
-[![asciicast](https://asciinema.org/a/8CBBlEONqmpVmMJk7qNbsZGGh.svg)](https://asciinema.org/a/8CBBlEONqmpVmMJk7qNbsZGGh)
+[![asciicast](https://asciinema.org/a/xnib6aPLo4nHzQj69zP4ve0EH.svg)](https://asciinema.org/a/xnib6aPLo4nHzQj69zP4ve0EH)
