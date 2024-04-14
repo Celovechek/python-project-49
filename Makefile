@@ -13,5 +13,8 @@ publish: #публикация пакета
 package-install: #установка пакета
 	python3 -m pip install --user dist/*.whl
 
+package-reinstall: #переустановка пакета
+	python3 -m pip install --user --force-reinstall dist/*.whl
+
 lint: #провера линтера
 	poetry run flake8 brain_games
