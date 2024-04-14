@@ -8,7 +8,7 @@ def main():
 def welcome_user():
     global NAME
     print('Welcome to the Brain Games!')
-    NAME = prompt.string("May I have your NAME? ")
+    NAME = prompt.string("May I have your name? ")
     print(f"Hello, {NAME}!")
     return NAME
 
@@ -31,5 +31,5 @@ def congratulations(NAME, i):
         print(f'Congratulations, {NAME}!')
 
 
-if __NAME__ == '__main__':
+if __name__ == '__main__':
     main()
