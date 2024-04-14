@@ -1,9 +1,23 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
-authors = ["Celovek Vodichka <celovekvodichka@gmail.com>"]
+description = "First version of project. Write command make package-reinstall to reinstall the package."
+authors = ["Mikhail Uvarov <celovekvodichka@gmail.com>"]
 readme = "README.md"
+repository = "https://github.com/Celovechek/python-project-49/"
+classifiers = [
+        "Natural Language :: English",
+        "Operating System :: POSIX :: Linux",
+        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
+        "Programming Language :: Python :: 3.12",
+        "Programming Language :: Python :: 3.13",
+        "Topic :: Education",
+]
 packages = [
 	{ include = "brain_games" },
 ]
