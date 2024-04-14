@@ -1,5 +1,5 @@
 # **Описание проекта**
-Данный репозиторий является реализацией первого проекта "Игры разума" на платформа Hexlet. 
+Данный репозиторий является реализацией первого проекта "Игры разума" на платформе Hexlet. 
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Celovechek/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Celovechek/python-project-49/actions)
 
@@ -30,7 +30,7 @@ make package-install
 python3 -m pip install --user dist/*.whl
 ```
 
-В случае, если небходимо переустановить пакет, необходимо выполнить одну из команд:
+В случае, если небходимо переустановить пакет, можно выполнить одну из команд:
 ```
 package-reinstall
 ```
