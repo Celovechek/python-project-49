@@ -16,10 +16,12 @@ def calc():
         FIRST_NUMBER = randint(0, 1000)
         SECOND_NUMBER = randint(0, 1000)
         OPERATION = choice([' + ', ' - ', ' * '])
-        CORRECT_ANSWER = str(eval(str(FIRST_NUMBER) + OPERATION + str(SECOND_NUMBER)))
+        CORRECT_ANSWER = str(eval(str(FIRST_NUMBER) + OPERATION
+                             + str(SECOND_NUMBER)))
         if algorithm(CORRECT_ANSWER,
                      NAME,
-                     QUESTION=f'Question: {FIRST_NUMBER}{OPERATION}{SECOND_NUMBER}'):
+                     QUESTION=f'Question: {FIRST_NUMBER}{OPERATION}'
+                              f'{SECOND_NUMBER}'):
             return
     congratulations(NAME, i)
 
