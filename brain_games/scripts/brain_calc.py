@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-from random import randint, choice
-from .logic import algorithm, congratulations, welcome_user
+from .logic import loop, congratulations, welcome_user
 
 
 def main():
@@ -11,19 +10,9 @@ def main():
 
 def calc():
     global NAME
-    print('What is the result of the expression?')
-    for i in range(3):
-        FIRST_NUMBER = randint(0, 1000)
-        SECOND_NUMBER = randint(0, 1000)
-        OPERATION = choice([' + ', ' - ', ' * '])
-        CORRECT_ANSWER = str(eval(str(FIRST_NUMBER) + OPERATION
-                             + str(SECOND_NUMBER)))
-        if algorithm(CORRECT_ANSWER,
-                     NAME,
-                     QUESTION=f'Question: {FIRST_NUMBER}{OPERATION}'
-                              f'{SECOND_NUMBER}'):
-            return
-    congratulations(NAME, i)
+    congratulations(NAME, loop(NAME,
+                               'What is the result of the expression?',
+                               'calc'))
 
 
 if __name__ == '__main__':
