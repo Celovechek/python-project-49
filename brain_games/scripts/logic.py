@@ -43,7 +43,7 @@ def loop(NAME, TASK, DISCIPLINE):
     for _ in range(ROUNDS):
         if game(NAME):
             break
-
+    return _
 
 def congratulations(NAME, i):
     if i == 2:
