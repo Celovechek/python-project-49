@@ -37,7 +37,7 @@ def loop(NAME, TASK, DISCIPLINE):
     elif DISCIPLINE == 'progression':
         from brain_games.games.progression import game
     elif DISCIPLINE == 'prime':
-        from prime import game
+        from brain_games.games.prime import game
     print(TASK)
     ROUNDS = 3
     for _ in range(ROUNDS):
