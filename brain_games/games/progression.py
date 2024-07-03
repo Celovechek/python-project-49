@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 from random import randint
-from logic import algorithm
+from brain_games.scripts.logic import algorithm
 
 
 def game(NAME):
