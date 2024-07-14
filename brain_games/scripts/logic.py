@@ -26,17 +26,13 @@ def algorithm(CORRECT_ANSWER, NAME, QUESTION):
         return True
 
 
-def loop(NAME, TASK, game):
-    print(TASK)
+def play(NAME, GAME_Q, game):
+    print(GAME_Q)
     ROUNDS = 3
-    for _ in range(ROUNDS):
+    for i in range(ROUNDS):
         if game(NAME):
             break
-    return _
-
-
-def congratulations(NAME, i):
-    if i == 2:
+    if i == ROUNDS - 1:
         print(f'Congratulations, {NAME}!')
 
 

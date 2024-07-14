@@ -3,6 +3,9 @@ from random import randint
 from brain_games.scripts.logic import algorithm
 
 
+GAME_Q = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+
+
 def prime_script(NUMBER):
     if NUMBER == 0 or NUMBER == 1:
         return "no"
@@ -18,3 +21,6 @@ def game(NAME):
     return algorithm(CORRECT_ANSWER,
                      NAME,
                      QUESTION=f'Question: {NUMBER}')
+
+
+GAME_LIST = [GAME_Q, game]

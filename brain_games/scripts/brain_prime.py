@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-from .logic import loop, congratulations, welcome_user
-from brain_games.games.prime import game
+from .logic import play, welcome_user
+from brain_games.games.prime import GAME_LIST
 
 
 def main():
@@ -11,10 +11,7 @@ def main():
 
 def prime():
     global NAME
-    congratulations(NAME, loop(NAME,
-                               'Answer "yes" if given number is prime. '
-                               'Otherwise answer "no".',
-                               game))
+    play(NAME, *GAME_LIST)
 
 
 if __name__ == '__main__':

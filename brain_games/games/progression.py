@@ -3,6 +3,9 @@ from random import randint
 from brain_games.scripts.logic import algorithm
 
 
+GAME_Q = 'What number is missing in the progression?'
+
+
 def game(NAME):
     START = randint(0, 100)
     STEP = randint(1, 100)
@@ -17,3 +20,6 @@ def game(NAME):
     return algorithm(CORRECT_ANSWER,
                      NAME,
                      QUESTION=f'Question: {" ".join(PROGRESSION_LIST)}')
+
+
+GAME_LIST = [GAME_Q, game]

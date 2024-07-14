@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-from .logic import loop, congratulations, welcome_user
-from brain_games.games.gcd import game
+from .logic import play, welcome_user
+from brain_games.games.gcd import GAME_LIST
 
 
 def main():
@@ -11,10 +11,7 @@ def main():
 
 def gcd():
     global NAME
-    congratulations(NAME, loop(NAME,
-                               'Find the greatest common divisor '
-                               'of given numbers.',
-                               game))
+    play(NAME, *GAME_LIST)
 
 
 if __name__ == '__main__':
