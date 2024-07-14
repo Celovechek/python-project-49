@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 from .logic import loop, congratulations, welcome_user
+from brain_games.games.even import game
 
 
 def main():
@@ -13,7 +14,7 @@ def even():
     congratulations(NAME, loop(NAME,
                                'Answer "yes" if the number is even, '
                                'otherwise answer "no".',
-                               'even'))
+                               game))
 
 
 if __name__ == '__main__':

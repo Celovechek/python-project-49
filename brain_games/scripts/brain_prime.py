@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 from .logic import loop, congratulations, welcome_user
+from brain_games.games.prime import game
 
 
 def main():
@@ -13,7 +14,7 @@ def prime():
     congratulations(NAME, loop(NAME,
                                'Answer "yes" if given number is prime. '
                                'Otherwise answer "no".',
-                               'prime'))
+                               game))
 
 
 if __name__ == '__main__':

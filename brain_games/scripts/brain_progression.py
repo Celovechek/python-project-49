@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 from .logic import loop, congratulations, welcome_user
+from brain_games.games.progression import game
 
 
 def main():
@@ -12,7 +13,7 @@ def progression():
     global NAME
     congratulations(NAME, loop(NAME,
                                'What number is missing in the progression?',
-                               'progression'))
+                               game))
 
 
 if __name__ == '__main__':

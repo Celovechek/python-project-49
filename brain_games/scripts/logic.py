@@ -26,24 +26,14 @@ def algorithm(CORRECT_ANSWER, NAME, QUESTION):
         return True
 
 
-# flake8: noqa: C901
-def loop(NAME, TASK, DISCIPLINE):
-    if DISCIPLINE == 'even':
-        from brain_games.games.even import game
-    elif DISCIPLINE == 'calc':
-        from brain_games.games.calc import game
-    elif DISCIPLINE == 'gcd':
-        from brain_games.games.gcd import game
-    elif DISCIPLINE == 'progression':
-        from brain_games.games.progression import game
-    elif DISCIPLINE == 'prime':
-        from brain_games.games.prime import game
+def loop(NAME, TASK, game):
     print(TASK)
     ROUNDS = 3
     for _ in range(ROUNDS):
         if game(NAME):
             break
     return _
+
 
 def congratulations(NAME, i):
     if i == 2:
