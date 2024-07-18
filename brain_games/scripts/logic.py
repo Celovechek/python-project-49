@@ -31,7 +31,7 @@ def play(NAME, GAME_Q, game):
     ROUNDS = 3
     for i in range(ROUNDS):
         if algorithm(NAME, *game()):
-            break
+            return
     if i == ROUNDS - 1:
         print(f'Congratulations, {NAME}!')
 
