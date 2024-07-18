@@ -13,7 +13,7 @@ def welcome_user():
     return NAME
 
 
-def algorithm(CORRECT_ANSWER, NAME, QUESTION):
+def algorithm(NAME, CORRECT_ANSWER, QUESTION):
     print(QUESTION)
     USERS_ANSWER = input('Your answer: ')
     if CORRECT_ANSWER == USERS_ANSWER:
@@ -30,7 +30,7 @@ def play(NAME, GAME_Q, game):
     print(GAME_Q)
     ROUNDS = 3
     for i in range(ROUNDS):
-        if game(NAME):
+        if algorithm(NAME, *game()):
             break
     if i == ROUNDS - 1:
         print(f'Congratulations, {NAME}!')
