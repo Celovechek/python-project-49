@@ -5,18 +5,18 @@ from random import randint
 GAME_Q = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def prime_script(NUMBER):
+def prime_check(NUMBER):
     if NUMBER == 0 or NUMBER == 1:
-        return "no"
+        return False
     DIVIDER = 2
     while NUMBER % DIVIDER != 0:
         DIVIDER += 1
-    return "yes" if NUMBER == DIVIDER else "no"
+    return NUMBER == DIVIDER
 
 
 def game():
     NUMBER = randint(0, 100)
-    CORRECT_ANSWER = prime_script(NUMBER)
+    CORRECT_ANSWER = "yes" if prime_check(NUMBER) else "no"
     QUESTION = f'Question: {NUMBER}'
     return CORRECT_ANSWER, QUESTION
 
