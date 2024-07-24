@@ -12,8 +12,8 @@ def even_check(NUMBER):
 def game():
     NUMBER = randint(0, 1000000)
     CORRECT_ANSWER = 'yes' if even_check(NUMBER) else 'no'
-    QUESTION = f'Question: {NUMBER}'
-    return CORRECT_ANSWER, QUESTION
+    QUESTION_LIST = [NUMBER]
+    return CORRECT_ANSWER, QUESTION_LIST
 
 
 GAME_LIST = [GAME_Q, game]

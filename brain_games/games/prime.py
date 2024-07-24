@@ -17,8 +17,8 @@ def prime_check(NUMBER):
 def game():
     NUMBER = randint(0, 100)
     CORRECT_ANSWER = "yes" if prime_check(NUMBER) else "no"
-    QUESTION = f'Question: {NUMBER}'
-    return CORRECT_ANSWER, QUESTION
+    QUESTION_LIST = [NUMBER]
+    return CORRECT_ANSWER, QUESTION_LIST
 
 
 GAME_LIST = [GAME_Q, game]

@@ -13,8 +13,8 @@ def welcome_user():
     return NAME
 
 
-def algorithm(NAME, CORRECT_ANSWER, QUESTION):
-    print(QUESTION)
+def algorithm(NAME, CORRECT_ANSWER, QUESTION_LIST):
+    print(f'Question: {" ".join(map(str, QUESTION_LIST))}')
     USERS_ANSWER = input('Your answer: ')
     if CORRECT_ANSWER == USERS_ANSWER:
         print('Correct!')
