@@ -6,7 +6,7 @@ GAME_Q = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def even_check(NUMBER):
-    return not(bool(NUMBER % 2))
+    return not (bool(NUMBER % 2))
 
 
 def game():

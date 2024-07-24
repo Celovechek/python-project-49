@@ -15,8 +15,8 @@ def gcd_script(FIRST_NUMBER, SECOND_NUMBER):
 
 
 def game():
-    FIRST_NUMBER = randint(0, 100)
-    SECOND_NUMBER = randint(0, 100)
+    FIRST_NUMBER = randint(0, 50)
+    SECOND_NUMBER = randint(0, 50)
     CORRECT_ANSWER = str(gcd_script(FIRST_NUMBER, SECOND_NUMBER))
     QUESTION = f'Question: {FIRST_NUMBER} {SECOND_NUMBER}'
     return CORRECT_ANSWER, QUESTION
