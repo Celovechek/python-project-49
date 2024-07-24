@@ -1,19 +1,10 @@
 import prompt
 
 
-def main():
-    print('Welcome to the Brain Games!')
-
-
-def welcome_user():
-    global NAME
+def play(GAME_Q, game):
     print('Welcome to the Brain Games!')
     NAME = prompt.string("May I have your name? ")
     print(f"Hello, {NAME}!")
-    return NAME
-
-
-def play(NAME, GAME_Q, game):
     print(GAME_Q)
     ROUNDS = 3
     for i in range(ROUNDS):
@@ -29,7 +20,3 @@ def play(NAME, GAME_Q, game):
             return
     if i == ROUNDS - 1:
         print(f'Congratulations, {NAME}!')
-
-
-if __name__ == '__main__':
-    main()
