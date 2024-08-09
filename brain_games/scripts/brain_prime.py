@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from .logic import play
+from ..logic import play
 from brain_games.games.prime import GAME_LIST
 
 
