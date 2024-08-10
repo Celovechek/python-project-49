@@ -2,7 +2,7 @@
 from random import randint
 
 
-GAME_Q = 'Answer "yes" if the number is even, otherwise answer "no".'
+GAME_RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def is_even(number):
@@ -16,4 +16,4 @@ def game():
     return correct_answer, question_list
 
 
-GAME_LIST = [GAME_Q, game]
+GAME_LIST = [GAME_RULES, game]
