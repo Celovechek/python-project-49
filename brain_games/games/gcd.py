@@ -5,21 +5,21 @@ from random import randint
 GAME_Q = 'Find the greatest common divisor of given numbers.'
 
 
-def gcd_script(FIRST_NUMBER, SECOND_NUMBER):
-    while FIRST_NUMBER != SECOND_NUMBER:
-        if FIRST_NUMBER > SECOND_NUMBER:
-            FIRST_NUMBER -= SECOND_NUMBER
+def gcd_script(first_number, second_number):
+    while first_number != second_number:
+        if first_number > second_number:
+            first_number -= second_number
         else:
-            SECOND_NUMBER -= FIRST_NUMBER
-    return SECOND_NUMBER
+            second_number -= first_number
+    return second_number
 
 
 def game():
-    FIRST_NUMBER = randint(0, 50)
-    SECOND_NUMBER = randint(0, 50)
-    CORRECT_ANSWER = str(gcd_script(FIRST_NUMBER, SECOND_NUMBER))
-    QUESTION_LIST = [FIRST_NUMBER, SECOND_NUMBER]
-    return CORRECT_ANSWER, QUESTION_LIST
+    first_number = randint(0, 50)
+    second_number = randint(0, 50)
+    correct_answer = str(gcd_script(first_number, second_number))
+    question_list = [first_number, second_number]
+    return correct_answer, question_list
 
 
 GAME_LIST = [GAME_Q, game]
