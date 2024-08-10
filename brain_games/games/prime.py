@@ -5,7 +5,7 @@ from random import randint
 GAME_Q = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def prime_check(number):
+def is_prime(number):
     if number == 0 or number == 1:
         return False
     divider = 2
@@ -16,7 +16,7 @@ def prime_check(number):
 
 def game():
     number = randint(0, 100)
-    correct_answer = "yes" if prime_check(number) else "no"
+    correct_answer = "yes" if is_prime(number) else "no"
     question_list = [number]
     return correct_answer, question_list
 
