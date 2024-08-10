@@ -2,7 +2,7 @@
 from random import randint
 
 
-GAME_Q = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+GAME_RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(number):
@@ -21,4 +21,4 @@ def game():
     return correct_answer, question_list
 
 
-GAME_LIST = [GAME_Q, game]
+GAME_LIST = [GAME_RULES, game]
