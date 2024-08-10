@@ -2,7 +2,7 @@
 from random import randint, choice
 
 
-GAME_Q = 'What is the result of the expression?'
+GAME_RULES = 'What is the result of the expression?'
 
 
 def game():
@@ -15,4 +15,4 @@ def game():
     return correct_answer, question_list
 
 
-GAME_LIST = [GAME_Q, game]
+GAME_LIST = [GAME_RULES, game]
