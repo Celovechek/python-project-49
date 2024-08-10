@@ -5,13 +5,13 @@ from random import randint
 GAME_Q = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def even_check(number):
+def is_even(number):
     return not (bool(number % 2))
 
 
 def game():
     number = randint(0, 1000000)
-    correct_answer = 'yes' if even_check(number) else 'no'
+    correct_answer = 'yes' if is_even(number) else 'no'
     question_list = [number]
     return correct_answer, question_list
 
