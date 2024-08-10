@@ -10,7 +10,9 @@ def is_even(number):
 
 
 def game():
-    number = randint(0, 1000000)
+    start = 0
+    end = 1000000
+    number = randint(start, end)
     correct_answer = 'yes' if is_even(number) else 'no'
     question_list = [number]
     return correct_answer, question_list
