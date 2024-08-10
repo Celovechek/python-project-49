@@ -6,8 +6,10 @@ GAME_RULES = 'What is the result of the expression?'
 
 
 def game():
-    first_number = randint(0, 1000)
-    second_number = randint(0, 1000)
+    start = 0
+    end = 1000
+    first_number = randint(start, end)
+    second_number = randint(start, end)
     operation = choice(['+', '-', '*'])
     correct_answer = str(eval(str(first_number) + operation
                               + str(second_number)))
