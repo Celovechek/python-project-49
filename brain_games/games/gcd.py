@@ -16,7 +16,7 @@ def calculate_gcd(first_number, second_number):
 
 def game():
     start = 0
-    end = 50
+    end = 100
     first_number = randint(start, end)
     second_number = randint(start, end)
     correct_answer = str(calculate_gcd(first_number, second_number))
