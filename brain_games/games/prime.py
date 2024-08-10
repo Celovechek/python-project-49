@@ -15,7 +15,9 @@ def is_prime(number):
 
 
 def game():
-    number = randint(0, 100)
+    start = 0
+    end = 100
+    number = randint(start, end)
     correct_answer = "yes" if is_prime(number) else "no"
     question_list = [number]
     return correct_answer, question_list
