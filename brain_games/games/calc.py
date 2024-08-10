@@ -6,13 +6,13 @@ GAME_Q = 'What is the result of the expression?'
 
 
 def game():
-    FIRST_NUMBER = randint(0, 1000)
-    SECOND_NUMBER = randint(0, 1000)
-    OPERATION = choice(['+', '-', '*'])
-    CORRECT_ANSWER = str(eval(str(FIRST_NUMBER) + OPERATION
-                              + str(SECOND_NUMBER)))
-    QUESTION_LIST = [FIRST_NUMBER, OPERATION, SECOND_NUMBER]
-    return CORRECT_ANSWER, QUESTION_LIST
+    first_number = randint(0, 1000)
+    second_number = randint(0, 1000)
+    operation = choice(['+', '-', '*'])
+    correct_answer = str(eval(str(first_number) + operation
+                              + str(second_number)))
+    question_list = [first_number, operation, second_number]
+    return correct_answer, question_list
 
 
 GAME_LIST = [GAME_Q, game]
