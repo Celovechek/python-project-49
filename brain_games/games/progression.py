@@ -2,7 +2,7 @@
 from random import randint
 
 
-GAME_Q = 'What number is missing in the progression?'
+GAME_RULES = 'What number is missing in the progression?'
 
 
 def game():
@@ -19,4 +19,4 @@ def game():
     return correct_answer, progression_list
 
 
-GAME_LIST = [GAME_Q, game]
+GAME_LIST = [GAME_RULES, game]
