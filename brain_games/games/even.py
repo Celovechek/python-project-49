@@ -9,7 +9,7 @@ def is_even(number):
     return not (bool(number % 2))
 
 
-def game():
+def question_and_answer():
     start = 0
     end = 1000000
     number = randint(start, end)
@@ -18,4 +18,4 @@ def game():
     return correct_answer, question_list
 
 
-GAME_LIST = [GAME_RULES, game]
+GAME_LIST = [GAME_RULES, question_and_answer]
