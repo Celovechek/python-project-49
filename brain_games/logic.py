@@ -1,14 +1,14 @@
 import prompt
 
 
-def play(GAME_RULES, game):
+def play(GAME_RULES, question_and_answer):
     print('Welcome to the Brain Games!')
     NAME = prompt.string("May I have your name? ")
     print(f"Hello, {NAME}!")
     print(GAME_RULES)
     ROUNDS = 3
     for i in range(ROUNDS):
-        CORRECT_ANSWER, QUESTION_LIST = game()
+        CORRECT_ANSWER, QUESTION_LIST = question_and_answer()
         print(f'Question: {" ".join(map(str, QUESTION_LIST))}')
         USERS_ANSWER = input('Your answer: ')
         if CORRECT_ANSWER == USERS_ANSWER:
