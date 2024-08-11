@@ -14,7 +14,7 @@ def calculate_gcd(first_number, second_number):
     return second_number
 
 
-def game():
+def question_and_answer():
     start = 0
     end = 100
     first_number = randint(start, end)
@@ -24,4 +24,4 @@ def game():
     return correct_answer, question_list
 
 
-GAME_LIST = [GAME_RULES, game]
+GAME_LIST = [GAME_RULES, question_and_answer]
