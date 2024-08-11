@@ -5,7 +5,7 @@ from random import randint
 GAME_RULES = 'What number is missing in the progression?'
 
 
-def game():
+def question_and_answer():
     start = randint(0, 100)
     step = randint(1, 100)
     length = randint(5, 15)
@@ -19,4 +19,4 @@ def game():
     return correct_answer, progression_list
 
 
-GAME_LIST = [GAME_RULES, game]
+GAME_LIST = [GAME_RULES, question_and_answer]
