@@ -5,7 +5,7 @@ from random import randint, choice
 GAME_RULES = 'What is the result of the expression?'
 
 
-def game():
+def question_and_answer():
     start = 0
     end = 1000
     first_number = randint(start, end)
@@ -17,4 +17,4 @@ def game():
     return correct_answer, question_list
 
 
-GAME_LIST = [GAME_RULES, game]
+GAME_LIST = [GAME_RULES, question_and_answer]
