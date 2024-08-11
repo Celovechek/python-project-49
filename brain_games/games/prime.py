@@ -14,7 +14,7 @@ def is_prime(number):
     return number == divider
 
 
-def game():
+def question_and_answer():
     start = 0
     end = 100
     number = randint(start, end)
@@ -23,4 +23,4 @@ def game():
     return correct_answer, question_list
 
 
-GAME_LIST = [GAME_RULES, game]
+GAME_LIST = [GAME_RULES, question_and_answer]
