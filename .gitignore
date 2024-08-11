@@ -5,6 +5,4 @@ brain_games/scripts/__pycache__/
 dist/
 dist/hexlet_code-0.1.0-py3-none-any.whl
 dist/hexlet_code-0.1.0.tar.gz
-brain_games/games/__pycache__/__init__.cpython-310.pyc
-brain_games/games/__pycache__/even.cpython-310.pyc
-
+brain_games/games/__pycache__/
