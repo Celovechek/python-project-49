@@ -6,7 +6,7 @@ GAME_RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def is_even(number):
-    return not (bool(number % 2))
+    return number % 2 == 0
 
 
 def question_and_answer():
