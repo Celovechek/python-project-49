@@ -19,4 +19,4 @@ def question_and_answer():
     return correct_answer, progression_list
 
 
-GAME_LIST = [GAME_RULES, question_and_answer]
+GAME_LIST = (GAME_RULES, question_and_answer)
