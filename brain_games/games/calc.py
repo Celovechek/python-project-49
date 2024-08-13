@@ -5,6 +5,7 @@ GAME_RULES = 'What is the result of the expression?'
 
 
 def question_and_answer():
+    '''Return correct answer and question list for calc game'''
     start = 0
     end = 1000
     first_number = randint(start, end)

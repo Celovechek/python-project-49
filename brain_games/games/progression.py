@@ -6,6 +6,7 @@ GAME_RULES = 'What number is missing in the progression?'
 
 
 def question_and_answer():
+    '''Return correct answer and question list for progression game'''
     start = randint(0, 100)
     step = randint(1, 100)
     length = randint(5, 15)
