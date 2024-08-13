@@ -4,10 +4,6 @@ from brain_games.games.progression import GAME_LIST
 
 
 def main():
-    progression()
-
-
-def progression():
     play(*GAME_LIST)
 
 

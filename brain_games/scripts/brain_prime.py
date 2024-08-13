@@ -4,10 +4,6 @@ from brain_games.games.prime import GAME_LIST
 
 
 def main():
-    prime()
-
-
-def prime():
     play(*GAME_LIST)
 
 

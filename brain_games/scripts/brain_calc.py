@@ -4,10 +4,6 @@ from brain_games.games.calc import GAME_LIST
 
 
 def main():
-    calc()
-
-
-def calc():
     play(*GAME_LIST)
 
 

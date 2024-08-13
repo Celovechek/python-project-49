@@ -4,10 +4,6 @@ from brain_games.games.even import GAME_LIST
 
 
 def main():
-    even()
-
-
-def even():
     play(*GAME_LIST)
 
 

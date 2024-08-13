@@ -4,10 +4,6 @@ from brain_games.games.gcd import GAME_LIST
 
 
 def main():
-    gcd()
-
-
-def gcd():
     play(*GAME_LIST)
 
 
